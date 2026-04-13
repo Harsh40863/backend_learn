@@ -22,7 +22,7 @@ app.use(cookieParser())
 connectDB()
 .then(() => {
     app.listen(process.env.PORT || 8000, () => {
-        console.log("server is running ||||")
+        console.log(`SERVER RUNNING ON PORT ${process.env.PORT || 8000} ✅`);
     })
 })
 .catch((err) => {
